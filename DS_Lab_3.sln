@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DS_Lab_3", "DS_Lab_3\DS_Lab_3.csproj", "{5EB7A73E-3DDE-4C4C-8149-A90A868A83BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_2", "WPF_2\WPF_2.csproj", "{C341330B-3077-4F74-A945-CC789679C566}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5EB7A73E-3DDE-4C4C-8149-A90A868A83BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EB7A73E-3DDE-4C4C-8149-A90A868A83BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EB7A73E-3DDE-4C4C-8149-A90A868A83BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EB7A73E-3DDE-4C4C-8149-A90A868A83BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C341330B-3077-4F74-A945-CC789679C566}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C341330B-3077-4F74-A945-CC789679C566}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C341330B-3077-4F74-A945-CC789679C566}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C341330B-3077-4F74-A945-CC789679C566}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

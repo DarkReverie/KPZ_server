@@ -1,0 +1,46 @@
+﻿<Window x:Class="WPF_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <TabControl>
+       
+        <TabItem Header="Lockers">
+            <Grid>
+                <DataGrid x:Name="LockerDataGrid" AutoGenerateColumns="False" CanUserAddRows="False" Margin="10">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="50"/>
+                        <DataGridTextColumn Header="Locker Number" Binding="{Binding LockerNumber }" Width="*"/>
+                        <DataGridTextColumn Header="Is Available" Binding="{Binding IsAvailable}" Width="*"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="10">
+                    <Button x:Name="AddLockerButton" Content="Add" Margin="5" Click="AddLockerButton_Click"/>
+                    <Button x:Name="DeleteLockerButton" Content="Delete" Margin="5" Click="DeleteLockerButton_Click" />
+                    <Button x:Name="UpdateLockerButton" Content="Update" Margin="5" Click="UpdateLockerButton_Click" />
+                </StackPanel>
+            </Grid>
+        </TabItem>
+        <TabItem Header="Shop Items">
+            <Grid>
+                <DataGrid x:Name="ShopItemDataGrid" AutoGenerateColumns="False" CanUserAddRows="False" Margin="10">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="50"/>
+                        <DataGridTextColumn Header="Name" Binding="{Binding Name}" Width="*"/>
+                        <DataGridTextColumn Header="Description" Binding="{Binding Description}" Width="*"/>
+                        <DataGridTextColumn Header="Price" Binding="{Binding Price}" Width="*"/>
+                        <DataGridTextColumn Header="Stock Quantity" Binding="{Binding StockQuantity}" Width="*"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="10">
+                    <Button x:Name="AddShopItemButton" Content="Add" Margin="5" Click="AddShopItemButton_Click"/>
+                    <Button x:Name="DeleteShopItemButton" Content="Delete" Margin="5" Click="DeleteShopItemButton_Click" />
+                    <Button x:Name="UpdateShopItemButton" Content="Update" Margin="5" Click="UpdateShopItemButton_Click" />
+                </StackPanel>
+            </Grid>
+        </TabItem>
+
+    </TabControl>
+</Window>
